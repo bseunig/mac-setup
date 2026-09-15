@@ -16,7 +16,7 @@ Zugangsdaten, keine internen Hostnamen.
 ## Neuer Rechner
 
 ```bash
-git clone https://github.com/<user>/mac-setup.git ~/mac-setup
+git clone https://github.com/bseunig/mac-setup.git ~/mac-setup
 ~/mac-setup/bootstrap.sh work        # oder: private
 ```
 
