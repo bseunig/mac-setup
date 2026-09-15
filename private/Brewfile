@@ -1,0 +1,15 @@
+# Apps privates MacBook – Grundausstattung
+# Installation: ./bootstrap.sh private
+#
+# Noch nicht befuellt. Eintraege nach dem Muster von work/Brewfile:
+#
+#   cask "beispiel-app"
+#
+# Passenden Token finden: brew search <name> / brew info --cask <token>
+
+
+# ---------------------------------------------------------------------------
+# Nicht ueber Homebrew – manuell installieren.
+# bootstrap.sh liest diese Zeilen aus und gibt sie am Ende als Merkliste aus.
+# ---------------------------------------------------------------------------
+# MANUELL: (noch keine Eintraege)
