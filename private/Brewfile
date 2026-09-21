@@ -1,15 +1,29 @@
 # Apps privates MacBook – Grundausstattung
 # Installation: ./bootstrap.sh private
-#
-# Noch nicht befuellt. Eintraege nach dem Muster von work/Brewfile:
-#
-#   cask "beispiel-app"
-#
-# Passenden Token finden: brew search <name> / brew info --cask <token>
+
+# --- Browser & Kommunikation ---
+cask "discord"
+cask "readdle-spark"      # Spark Mail
+cask "signal"
+cask "zen"                # frueher "zen-browser"
+
+# --- Entwicklung & Terminal ---
+cask "claude"
+cask "termius"
+cask "visual-studio-code"
+cask "warp"
+
+# --- System & Werkzeuge ---
+cask "1password"
+cask "aldente"
+cask "keepassxc"
+cask "nextcloud"
+cask "vorssaint"          # nur Apple Silicon, macOS 14+
 
 
 # ---------------------------------------------------------------------------
 # Nicht ueber Homebrew – manuell installieren.
 # bootstrap.sh liest diese Zeilen aus und gibt sie am Ende als Merkliste aus.
 # ---------------------------------------------------------------------------
-# MANUELL: (noch keine Eintraege)
+# MANUELL: Adobe – Website
+# MANUELL: Passepartout – App Store

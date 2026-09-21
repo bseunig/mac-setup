@@ -5,6 +5,7 @@
 cask "google-chrome"
 cask "mattermost"
 cask "whatsapp"
+cask "zen"                # frueher "zen-browser"
 
 # --- Entwicklung ---
 cask "intellij-idea"      # Unified Release: CE und Ultimate sind zusammengelegt
@@ -15,14 +16,16 @@ cask "royal-tsx"
 cask "rustdesk"
 cask "teamviewer"
 cask "termius"
+cask "warp"
 cask "wireshark-app"      # GUI-Variante; die Formula "wireshark" enthaelt nur die CLI-Tools
 
 # --- System & Werkzeuge ---
 cask "aldente"
 cask "keepassxc"
-cask "logi-options+"       # Token-Rename, frueher "logi-options-plus"; Neustart noetig
+cask "logi-options+"      # frueher "logi-options-plus"; Neustart noetig
 cask "nextcloud"
 cask "shottr"
+cask "vorssaint"          # nur Apple Silicon, macOS 14+
 
 # --- Office ---
 cask "microsoft-office"
@@ -34,6 +37,5 @@ cask "microsoft-office"
 # ---------------------------------------------------------------------------
 # MANUELL: Adobe – Website
 # MANUELL: Acronis – Website
-# MANUELL: Amphetamine – App Store
 # MANUELL: LanScan – App Store
 # MANUELL: Passepartout – App Store
