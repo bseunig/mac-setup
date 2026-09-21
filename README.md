@@ -3,7 +3,7 @@
 Grundausstattung für meine Macs, getrennt nach Profil:
 
 - `work/Brewfile` – Arbeits-MacBook
-- `private/Brewfile` – privates MacBook (noch nicht befüllt)
+- `private/Brewfile` – privates MacBook
 
 Das jeweilige `Brewfile` ist die einzige Liste, die gepflegt werden muss – es
 enthält sowohl die Homebrew-Pakete als auch die manuell zu installierenden Apps
@@ -27,14 +27,16 @@ Apps aus.
 ## Einzelne Befehle
 
 ```bash
-brew bundle install --file=./work/Brewfile             # installieren
-brew bundle install --file=./work/Brewfile --dry-run   # nur anzeigen, was passieren würde
-brew bundle check   --file=./work/Brewfile             # pruefen, ob etwas fehlt
+brew bundle install --file=./work/Brewfile   # installieren
+brew bundle check   --file=./work/Brewfile   # pruefen, ob etwas fehlt
 ```
 
-Der Dry-Run ist auch die Prüfung auf ungültige oder umbenannte Tokens: nicht
-existierende Casks fallen dabei sofort auf, statt erst beim Aufsetzen eines
-neuen Rechners.
+Tokens prüfen, ohne etwas zu installieren – schlägt fehl, sobald ein Cask nicht
+(mehr) existiert:
+
+```bash
+brew info --cask $(brew bundle list --file=./work/Brewfile --cask) >/dev/null && echo "alle Tokens gueltig"
+```
 
 ## App hinzufügen
 
@@ -63,6 +65,8 @@ automatisch und akzeptiert den Verzeichnisnamen als Argument.
   `logi-options-plus`. Nach der Installation ist ein Neustart nötig.
 - **Wireshark**: Der Cask heißt `wireshark-app`. Die gleichnamige Formula
   installiert nur die CLI-Tools.
+- **Vorssaint**: Offizieller Cask `vorssaint`, nur Apple Silicon und macOS 14+.
+  Frühere Installationen über den Tap `vorssaint/tap` vorher entfernen.
 - **App-Store-Apps** ließen sich grundsätzlich per `mas` automatisieren. Das
   setzt eine einmalige manuelle Anmeldung im App Store voraus, Bezahl-Apps
   müssen vorher regulär gekauft worden sein, und nach macOS-Updates ist `mas`
